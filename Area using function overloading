@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+int a;              //Global Variable.
+void area(int s)
+{
+    a=s*s;
+    cout<<"Area Of Square= "<<a<<endl;
+}
+void area(int b, int h)
+{
+    a=0.5*b*h;
+    cout<<"Area Of triangle= "<<a<<endl;
+}
+void area(int x, float y)
+{
+   a=(x*y);
+    cout<<"Area Of Rectangle= "<<a;
+}
+int main()
+{
+    int s,b,h,x;
+    float y;
+    cin>>s>>b>>h>>x;
+    cin>>y;
+    area(s);
+    area(b,h);
+    area(x,y);
+    return 0;
+}
+****************************************************************************************************
+this is sample program for function overloading.
+Input
+2           // this is input for square.
+4 6         // this is input for triangle.
+2 3         // this is input for rectangle.

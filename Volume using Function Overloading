@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+void Volume(int l, int b, int h)
+{
+    int v=0.5*l*b*h;
+    cout<<"Volume Of Triangle= "<<v<<endl;;
+}
+void Volume(int a)
+{
+    int v=a*a*a;
+    cout<<"Volume Of square= "<<v<<endl;
+}
+void Volume(int x, int y, float z)
+{
+    int v=x*y*z;
+    cout<<"volume Of Rectangle= "<<v;
+}
+int main() 
+{
+    int l,b,h,a,x,y;
+    cin>>l>>b>>h>>a>>x>>y;
+    float z;
+    cin>>z;
+    Volume(l,b,h);              //For Triangle
+    Volume(a);                  //For Square
+    Volume(x,y,z);              //For Rectangle
+	return 0;
+}
+*******************************************************************************************
+This is sample Pogram of function overloading.
+Sample Input.
+10 20 30         // This input for Triangle.
+40               // This input for Square.
+50 60 70         // This input for Rectangle.
+Sample Output.
+Volume Of Triangle= 3000
+Volume Of square= 64000
+volume Of Rectangle= 210000

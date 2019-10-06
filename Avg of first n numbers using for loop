@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int n,i,sum=0;
+    cin>>n;
+    float avg=0.0;
+    for(i=1; i<=n; i++)
+        sum=sum+i;
+        avg=sum/n;
+        cout<<"Sum= "<<sum<<endl;
+        cout<<"Average= "<<avg;
+	return 0;
+}
+***********************************************************************
+This is a sample pogram using for loop to print avg of first n numbers.
+Sample Input.
+10
+Sample Output.
+Sum= 55
+Average= 5

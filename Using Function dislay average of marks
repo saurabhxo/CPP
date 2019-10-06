@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+void avg(int m1, int m2, int m3)
+{
+    int sum=m1+m2+m3;
+    int avg=sum/3;
+    cout<<" Average= "<<avg;
+}
+int main() 
+{
+    int m1, m2,m3;
+    cin>>m1>>m2>>m3;
+     cout<<"Marks in maths= "<<m1<<endl;
+    cout<<"Marks in physics= "<<m2<<endl;
+    cout<<"Marks in chemistry= "<<m3<<endl;
+   
+    avg(m1,m2,m3);
+	return 0;
+}
+*****************************************************************
+This is sample pogram using fuction display marks average.
+Sample Input.
+75       // m1
+70       // m2
+65       // m3
+Sample Output.
+Marks in maths= 75
+Marks in physics= 70
+Marks in chemistry= 65
+ Average= 70

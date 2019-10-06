@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+void even(int n);
+int main()
+{
+    int n;
+    cin>>n;
+    even(n);
+    return 0;
+}
+
+void even(int n)
+{
+    int i;
+    if(n%2==0)
+    {
+        
+        cout<<"even";
+    }
+    else
+    cout<<"odd";
+}
+*************************************************************************
+This pogram is ussed to find even or odd with  the help of functions
+sample INPUT
+5
+Sample OUTPUT
+ODD

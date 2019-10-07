@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int n,rem,rev=0;
+    cin>>n;
+    int t=n;
+    while(n>0)
+    {
+        rem=n%10;
+        rev=rev*10+rem;
+        n=n/10;
+    }
+    if(t==rev)
+    cout<<"Pallendrome";
+    else
+    cout<<"Not Pallendrome";
+	return 0;
+}
+***************************************************************************
+This is sample pogram for pallendrome.
+Sample Input.
+1331
+Sample Output.
+Pallendrome

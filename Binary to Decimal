@@ -1,0 +1,24 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main() 
+{
+    int n, i=0, rem, res=0;
+    cin>>n;
+    while(n>0)
+    {
+        rem=n%10;
+        res=res+(rem*pow(2,i));
+        i++;
+        n=n/10;
+    }
+    cout<<res;
+	return 0;
+}
+***************************************************************
+This is sample pogram for conerting binary to decimal.
+sample Input.
+1011
+Sample Output.
+11

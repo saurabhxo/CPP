@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int n,j;
+    cin>>n;
+    int rem[8]={0};
+    int i=0;
+    while(n>0)
+    {
+        rem[i]=n%2;
+        n=n/2;
+        i++;
+    }
+    for(j=7;j>=0; j--)
+    cout<<rem[j];
+	return 0;
+}
+************************************************************************
+This is sample pogram for converting decimal to binary.
+Sample Input.
+11
+Sample Output.
+00001011

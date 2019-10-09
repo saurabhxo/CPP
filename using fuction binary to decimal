@@ -1,0 +1,27 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int bin(int n)
+{
+    int i=0, rem, res=0;
+    while(n>0)
+    {
+        rem=n%10;
+        res=res+(rem*pow(2,i));
+        i++;
+        n=n/10;
+    }
+    return res;
+}
+int main() 
+{
+    int n;
+    cin>>n;
+    cout<<bin(n);
+	return 0;
+}
+********************************************************************************************************
+Sample Input.
+1011
+Sample Output.
+11

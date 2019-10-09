@@ -1,0 +1,27 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() 
+{
+    int i,n,j=0;
+    char arr[10],res[10];
+    cin>>arr;
+    n=strlen(arr);
+    for(i=n-1;i>=0;i--)
+    {
+        res[j]=arr[i];
+        j++;
+    }
+    if(strcmp(arr,res)==0)
+    cout<<"Pallindrome";
+    else
+    cout<<"NO";
+    
+	return 0;
+}
+**********************************************************************************
+Sample Input.
+madam
+Sample Output.
+Pallindrome

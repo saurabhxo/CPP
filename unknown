@@ -1,0 +1,24 @@
+  #include <iostream>
+#include <cstring>
+using namespace std;
+
+int main()
+{
+    char arr[20],n;
+    int i,j;
+    cin>>arr;
+    n=strlen(arr);
+    for(i=0; i<n; i++)
+        {
+            for(j=i+1;j<n;j++)
+                {
+                    if(strcmp(arr[i],arr[j])>=0))
+                swap(arr[i],arr[j]);
+                }
+                
+            cout<<arr;
+            
+        }
+    
+	return 0;
+}

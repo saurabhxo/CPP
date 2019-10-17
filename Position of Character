@@ -1,0 +1,29 @@
+#include <iostream>
+#include <limits>
+#include <cstring>
+using namespace std;
+
+int main() 
+{
+    string arr;
+    char ch;
+  getline (cin, arr);
+    cin>>ch;
+    int i,n,count=0;
+    n=arr.length();
+    for(i=0; i<n; i++)
+    {
+        if(arr[i]!=ch)
+        count++;
+       if(arr[i]==ch)
+       break;
+    }
+    cout<<count;
+	return 0;
+}
+*************************************************************************************************************
+Sample Input.
+you are mine           //arr
+u                      //ch
+Sample Output
+2

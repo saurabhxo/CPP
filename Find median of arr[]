@@ -1,0 +1,45 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+int main() 
+{
+    int arr1[10], arr2[10],arr[10];
+    int i,n,m,j,s,t,avg,u;
+    cin>>n>>m;
+    for(i=0; i<n; i++)
+       cin>>arr1[i];
+    for(i=0; i<m; i++)
+    cin>>arr2[i];
+    for(i=0; i<n; i++)
+    arr[i]=arr1[i];
+    for(j=0;j<m;j++)
+    arr[i++]=arr2[j];
+    t=m+n;
+   for(i=0; i<t; i++)
+   {
+       for(j=i+1; j<t; j++)
+       if(arr[i]>arr[j])
+       swap(arr[i],arr[j]);
+   }
+   
+       if(t%2!=0)
+       {
+           s=(t+1)/2;
+           cout<<arr[s-1];
+       }
+       else
+       {
+           s=t/2;
+           u=s+1;
+           avg=(arr[s]+arr[u])/2;
+           cout<<avg;
+           
+       }
+    
+	return 0;
+}
+*******************************************************************************************************
+Sample Input
+3 4                              //n m
+1 3 2                            //arr1[]
+1 2 3 6                          //arr2[]

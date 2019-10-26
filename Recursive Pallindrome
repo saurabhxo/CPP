@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+int rem, res=0;
+int pallin(int n);
+int main() 
+{
+    int n,t;
+    cin>>n;
+    t=pallin(n);
+    if(t==n)
+    cout<<"Pallindrome";
+    else
+    cout<<"Not a Pallindrome";
+	return 0;
+}
+int pallin(int n)
+{
+    if(n==0)
+    return res;
+    else
+    {
+       rem=n%10;
+       res=res*10+rem;
+       return pallin(n/10);
+    }
+    return 0;
+}
+************************************************************************
+Sample Input
+1001
+Sample Output
+Pallendrome

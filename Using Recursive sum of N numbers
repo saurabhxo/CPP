@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int Sum(int n);
+int main()
+{
+    int n;
+    cin>>n;
+    Sum(n);
+    cout<<Sum(n);
+	return 0;
+}
+int Sum(int n)
+{
+    if(n==0)
+    return 0;
+    else
+    return n+Sum(n-1);
+    return 0;
+}
+*************************************************************************************************8
+Sample Input
+10                   //n
+Sample Output
+55

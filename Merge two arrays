@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main()
+{
+    int m,n,i,j;
+    char str1[20], str2[20], str[20];
+    cin>>str1>>str2;
+    n=strlen(str1);
+    m=strlen(str2);
+    for(i=0; i<n; i++)
+    {
+        str[i]=str1[i];
+        str[i+n]=str2[i];
+    }
+   for(i=0; i<(n+m); i++)
+    cout<<str[i];
+	return 0;
+  *******************************************************************************************

@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int hcf(int n1, int n2);
+int main() 
+{
+    int n1,n2,a,b;
+    cin>>n1>>n2;
+    a=n1;
+    b=n2;
+    int HCF=hcf(n1,n2);
+    cout<<"HCF= "<<HCF<<endl;
+    int l=(a*b)/HCF;
+    cout<<"LCM= "<<l;
+	return 0;
+}
+int hcf(int n1, int n2)
+{
+ if(n1==n2)
+ return n1;
+ else if(n1>n2)
+ return hcf(n1-n2,n2);
+ else if(n2>n1)
+ return hcf(n2-n1,n1);
+}
+**************************************************************************************************

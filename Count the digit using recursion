@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int count=0;
+int digit(int n);
+int main() 
+{
+    int n;
+    cin>>n;
+    cout<<digit(n);
+    
+	return 0;
+}
+int digit(int n)
+{
+    if(n==0)
+    return count;
+    else
+    digit(n/10);
+    count++;
+}
+********************************************************************************************************************************
+Sample Input
+4352          //n
+Sample Output
+4

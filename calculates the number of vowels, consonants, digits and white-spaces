@@ -1,0 +1,36 @@
+ #include <iostream>
+using namespace std;
+int main() 
+{
+    int n,i,vowel=0,cons=0,digit=0,space=0;
+    string line;
+    char res[100];
+    getline(cin,line);
+    n=line.length();
+    for(i=0; i<n; i++)
+    {
+        if(line[i]=='a'||line[i]=='e'||line[i]=='i'||line[i]=='o'||line[i]=='u'||
+        line[i]=='A'||line[i]=='E'||line[i]=='I'||line[i]=='O'||line[i]=='U')
+        vowel++;
+        else if((line[i]>='a' && line[i]<='z')||(line[i]>='A' && line[i]<='Z'))
+        cons++;
+        else if(line[i]>='0'&& line[i]<='9')
+        digit++;
+        else if(line[i]=' ')
+        space++;
+    }
+    cout<<"VOWEL= "<<vowel<<endl;
+    cout<<"CONSONANTS= "<<cons<<endl;
+    cout<<"DIGIT= "<<digit<<endl;
+    cout<<"WHITESPACE= "<<space;
+    
+	return 0;
+}
+*************************************************************************************************************
+Sample Input
+Shailu 3868 Chauhan
+Sample Output
+VOWEL= 6
+CONSONANTS= 7
+DIGIT= 4
+WHITESPACE= 2

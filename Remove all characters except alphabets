@@ -1,0 +1,24 @@
+ #include <iostream>
+using namespace std;
+int main() 
+{
+    int n,i,j=0;
+    string line;
+    char res[100];
+    getline(cin,line);
+    n=line.length();
+    for(i=0; i<n; i++)
+    {
+        if((line[i]>='a' && line[i]<='z')||(line[i]>='A' && line[i]<='Z'))
+        res[j++]=line[i];
+    }
+    res[j]='\0';
+    cout<<res;
+    
+	return 0;
+}
+********************************************************************************************************************
+Sample Input
+Shailu@3868Chauhan
+Sample Output
+ShailuChauhan

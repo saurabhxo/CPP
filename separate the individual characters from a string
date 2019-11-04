@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    char res[100];
+    string line;
+    getline(cin,line);
+    int i,n,j=0;
+    n=line.length();
+    for(i=0; i<n; i++)
+    {
+        if(line[i]!=' ')
+        res[j++]=line[i];
+        res[j++]=' ';
+        
+    }
+    cout<<res;
+	return 0;
+}
+***********************************************************************
+Sample Input
+ShailendraChauhan
+Sample Output
+S h a i l e n d r a C h a u h a n 

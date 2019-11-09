@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int n,i,j;
+    cin>>n;
+    int arr[n];
+    for(i=0; i<n; i++)
+    cin>>arr[i];
+    int x;
+    cin>>x;
+    arr[n]=x;
+    for(i=0; i<=n; i++)
+    {
+        for(j=0; j<=n; j++)
+        if(arr[i]<arr[j])
+        swap(arr[i],arr[j]);
+    }
+     for(i=0; i<=n; i++)
+     cout<<arr[i]<<endl;
+	return 0;
+}
+***********************************************************************************************************************
+Sample Input 
+5
+24 25 45 24 25
+43
+Sample Output
+24
+24
+25
+25
+43
+45

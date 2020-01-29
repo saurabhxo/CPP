@@ -1,27 +1,36 @@
 #include <iostream>
+#include <cstring>
 using namespace std;
+struct stud
+{
+    char name[20];
+    int reg;
+}s[10];
+  
+
 int main() 
 {
-    int max=0,i,n,j,count;
-    string line;
-    char ch;
-    getline(cin,line);
-    n=line.length();
-    for(i=0;i<n;i++)
+    int i,j,t;
+    cin>>t;
+    for(i=0;i<t;i++)
     {
-        count=1;
-        for(j=i+1;j<n;j++)
+        cin>>s[i].name;
+        cin>>s[i].reg;
+    }
+    for(i=0;i<t;i++)
+    {
+        for(j=i+1;j<t;j++)
         {
-            if(line[i]==line[j])
-            count++;
+        if(strcmp(s[i].name,s[j].name)>0)
+        {
+        swap(s[i],s[j]);
         }
-        if(count>max)
-        {
-        max=count;
-        ch=line[i];
         }
     }
-    
-     cout<<ch<<max;
+    for(i=0;i<t;i++)
+    {
+        cout<<s[i].name<<" ";
+        cout<<s[i].reg<<endl;
+    }
 	return 0;
 }

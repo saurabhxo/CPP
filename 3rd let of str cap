@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+ 
+int main () 
+{
+    int n,i;
+  string arr;
+  getline(cin,arr);
+  n=arr.length();
+for(i=0;i<n;i=(i+3))
+{
+    arr[i]=arr[i]-32;
+}
+for(i=0;i<n;i++)
+cout<<arr[i];
+  return 0;
+}
+*****************************

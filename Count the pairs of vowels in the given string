@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() 
+{
+    int n,i,j,count=0;
+    string s ;
+    getline(cin,s);
+    n=s.length();
+    for(i=0; i<n; i++)
+    {
+        if(s[i]=='a' || s[i]=='e' || s[i]=='i' || s[i]=='o' || s[i]=='u')
+        {
+             for(j=i+1; j<=i+1; j++)
+         if(s[j]=='a' || s[j]=='e' || s[j]=='i' || s[j]=='o' || s[j]=='u') 
+         count++;
+        }
+      
+      
+       }
+     
+       
+    cout<<count;
+	return 0;
+}

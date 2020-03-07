@@ -1,0 +1,39 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() 
+{
+    int i,count[3]={0},j,n;
+    string str;
+    char a[3];
+    for(i=0; i<3; i++)
+    cin>>a[i];
+    cin>>str;
+ 
+    n=str.length();
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+        if(str[i]==a[j])
+        {
+            count[a[j]]++;
+            if(count[a[j]]==2)
+            {
+                str[i]='#';
+                j++;
+            }
+        }
+    }
+    }
+    cout<<str;
+	return 0;
+}
+*****************************************************************************************************
+Input-
+g e k
+geeksforgeeks
+2
+Output-
+ge#ksfor#ee#s
